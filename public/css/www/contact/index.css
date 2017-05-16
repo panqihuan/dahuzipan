@@ -1,0 +1,170 @@
+
+.contact-box{
+    overflow-y: auto;
+    width: 1100px;
+    margin: 50px auto 0;
+    padding: 0 50px;
+}
+.contact-box.contact-show{
+    /*transition: all 2s ease;*/
+    /*-webkit-transition: all 2s ease;*/
+    /*-moz-transition: all 2s ease;*/
+    /*-ms-transition: all 2s ease;*/
+}
+.contact-box > div{
+    position: relative;
+    height: 540px;
+    padding: 60px 50px;
+}
+.contact-box > div:nth-child(1){
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    height: auto!important;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /*transition: all 0.2s ease;*/
+    /*-webkit-transition: all 0.2s ease;*/
+    /*-moz-transition: all 0.2s ease;*/
+    /*-ms-transition: all 0.2s ease;*/
+    overflow: hidden;
+}
+.contact-box > div:nth-child(2){
+    width: 35%;
+    float: left;
+    border: 1px solid #444444;
+}
+.contact-box > div:nth-child(3){
+    width: 65%;
+    float: left;
+    border: 1px solid #444444;
+    border-left: 0!important;
+}
+.contact-box .box-title span{
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: white;
+    opacity: 0.1;
+    /*-moz-transition: opacity 3000ms ease-out, transform 500ms ease-in;*/
+    /*-o-transition: opacity 3000ms ease-out, transform 500ms ease-in;*/
+    /*-webkit-transition: opacity 3000ms ease-out, transform 500ms ease-in;*/
+    /*transition: opacity 3000ms ease-out, transform 500ms ease-in;*/
+    /*transform: rotateY(90deg);*/
+    /*-webkit-transform: rotateY(90deg);*/
+    /*-moz-transform: rotateY(90deg);*/
+    /*-ms-transform: rotateY(90deg);*/
+
+    -moz-transition: opacity 1500ms ease-out;
+    -o-transition: opacity 1500ms ease-out;
+    -webkit-transition: opacity 1500ms ease-out;
+    transition: opacity 1500ms ease-out;
+
+}
+.contact-box .box-title span.on{
+    opacity: 1;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+}
+.contact-init{
+}
+.contact-init .title{
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+.contact-init .information{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #AAAAAA;
+    font-weight: bold;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.contact-init .information-content {
+    padding-bottom: 20px;
+}
+.contact-init .information-content p{
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    line-height: 24px;
+    color: white;
+}
+.contact-address{
+    border-top: 1px solid white;
+    padding: 30px 0;
+    position: relative;
+}
+.contact-address .address-content > div{
+    color: white;
+    font-size: 14px;
+}
+.contact-address .address-content .address-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 15px;
+}
+.contact-address .address-content .address-route{
+    line-height: 20px;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.contact-address .address-logo{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    overflow: hidden;
+    border: 2px solid rgb(35,31,32);
+}
+.contact-address .address-logo img{
+    height: 66px;
+}
+.contact-right *:not(input):not(select):not(option){
+    color: white;
+}
+.contact-right .contact-table-title{
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+}
+.contact-right .contact-table-box {
+    padding: 20px 0;
+}
+.contact-right .contact-table-box .table-input{
+    float: left;
+    width: 50%;
+    line-height: 30px;
+    padding: 0 20px 20px;
+}
+.contact-right .contact-table-box .table-input label{
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.contact-right .contact-table-box .table-input input{
+    float: left;
+    width: 100%;
+    height: 30px;
+    border: none;
+    margin-top: 3px;
+    text-indent: 10px;
+}
+.contact-right .contact-table-box .table-input select{
+    float: left;
+    width: 100%;
+    height: 30px;
+    border: none;
+    margin-top: 3px;
+    padding-left: 10px;
+}

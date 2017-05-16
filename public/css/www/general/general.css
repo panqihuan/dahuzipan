@@ -1,0 +1,236 @@
+
+@font-face {
+    font-family: 'TrumpGothicEastBold';
+    src: url('/fonts/TrumpGotEasBol-webfont.eot');
+    src: url('/fonts/TrumpGotEasBol-webfont.eot?iefix') format('eot'), url('/fonts/TrumpGotEasBol-webfont.woff') format('woff'),
+    url('/fonts/TrumpGotEasBol-webfont.ttf') format('truetype'),
+    url('/fonts/TrumpGotEasBol-webfont.svg#webfontca5KkFOq') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 767px;
+    /*min-width: 1440px;*/
+    background-color: #060606!important;
+    /*background: #373737 url(/image//bg.png) 0 0 repeat;*/
+    overflow: hidden;
+    color: #666;
+    font-family: "Noto Sans",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-size: 100%;
+    font-style: normal;
+    line-height: 1;
+    transform: translate3d(0, 0, 0);
+}
+@media only screen and (max-width: 767px){
+    .app.open {
+        -moz-transform: translate3d(240px, 0, 0);
+        -ms-transform: translate3d(240px, 0, 0);
+        -webkit-transform: translate3d(240px, 0, 0);
+        transform: translate3d(240px, 0, 0);
+    }
+    .app {
+        -moz-transition: -moz-transform 222ms ease-out;
+        -o-transition: -o-transform 222ms ease-out;
+        -webkit-transition: -webkit-transform 222ms ease-out;
+        transition: transform 222ms ease-out;
+    }
+}
+.main{
+    padding-top: 50px;
+    padding-left: 100px;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.app {
+    width: 100%;
+    height: 100%;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transition: -moz-transform 287ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: -o-transform 287ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: -webkit-transform 287ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 287ms cubic-bezier(0.215, 0.61, 0.355, 1);
+
+}
+.app.open {
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+}
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 800;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.nav .nav-bar {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    padding-top: 2.125em;
+    background-color: #212121;
+    z-index: 9999;
+    cursor: pointer;
+}
+.app .nav .menu_button {
+    width: 33px;
+    height: 26px;
+    /*background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzIuMTY2cHgiIGhlaWdodD0iMjQuMzM0cHgiIHZpZXdCb3g9IjAgMCAzMi4xNjYgMjQuMzM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMi4xNjYgMjQuMzM0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM1RTVGNUYiIGQ9Ik0zMi4xNjYsMy41ODRjMCwwLjU1My0wLjQ0NiwxLTEsMUgxYy0wLjU1MywwLTEtMC40NDctMS0xVjFjMC0wLjU1MywwLjQ0Ny0xLDEtMWgzMC4xNjYNCgljMC41NTQsMCwxLDAuNDQ3LDEsMVYzLjU4NHoiLz4NCjxwYXRoIGZpbGw9IiM1RTVGNUYiIGQ9Ik0zMi4xNjYsMTMuMzM0YzAsMC41NTMtMC40NDYsMS0xLDFIMWMtMC41NTMsMC0xLTAuNDQ3LTEtMVYxMC43NWMwLTAuNTUzLDAuNDQ3LTEsMS0xaDMwLjE2Ng0KCWMwLjU1NCwwLDEsMC40NDcsMSwxVjEzLjMzNHoiLz4NCjxwYXRoIGZpbGw9IiM1RTVGNUYiIGQ9Ik0zMi4xNjYsMjMuMzM0YzAsMC41NTMtMC40NDYsMS0xLDFIMWMtMC41NTMsMC0xLTAuNDQ3LTEtMVYyMC43NWMwLTAuNTUzLDAuNDQ3LTEsMS0xaDMwLjE2Ng0KCWMwLjU1NCwwLDEsMC40NDcsMSwxVjIzLjMzNHoiLz4NCjwvc3ZnPg0K');*/
+
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMi4xNjZweCIgaGVpZ2h0PSIyNC4zMzRweCIgdmlld0JveD0iMCAwIDMyLjE2NiAyNC4zMzQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyLjE2NiAyNC4zMzQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjQUVBRUFFIiBkPSJNMzIuMTY2LDMuNTg0YzAsMC41NTMtMC40NDYsMS0xLDFIMWMtMC41NTMsMC0xLTAuNDQ3LTEtMVYxYzAtMC41NTMsMC40NDctMSwxLTFoMzAuMTY2CgljMC41NTQsMCwxLDAuNDQ3LDEsMVYzLjU4NHoiLz4KPHBhdGggZmlsbD0iI0FFQUVBRSIgZD0iTTMyLjE2NiwxMy4zMzRjMCwwLjU1My0wLjQ0NiwxLTEsMUgxYy0wLjU1MywwLTEtMC40NDctMS0xVjEwLjc1YzAtMC41NTMsMC40NDctMSwxLTFoMzAuMTY2CgljMC41NTQsMCwxLDAuNDQ3LDEsMVYxMy4zMzR6Ii8+CjxwYXRoIGZpbGw9IiNBRUFFQUUiIGQ9Ik0zMi4xNjYsMjMuMzM0YzAsMC41NTMtMC40NDYsMS0xLDFIMWMtMC41NTMsMC0xLTAuNDQ3LTEtMVYyMC43NWMwLTAuNTUzLDAuNDQ3LTEsMS0xaDMwLjE2NgoJYzAuNTU0LDAsMSwwLjQ0NywxLDFWMjMuMzM0eiIvPgo8L3N2Zz4K');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: opacity 111ms ease-out;
+    -o-transition: opacity 111ms ease-out;
+    -webkit-transition: opacity 111ms ease-out;
+    transition: opacity 111ms ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.app.open .nav .menu_button{
+    width: 29px;
+    height: 28px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjUuMTZweCIgaGVpZ2h0PSIyNS4xNTlweCIgdmlld0JveD0iMCAwIDI1LjE2IDI1LjE1OSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjUuMTYgMjUuMTU5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiM1RTVGNUYiIGQ9Ik0xNS44MjIsMTIuNThsOS4wNDQtOS4wNDRjMC4zOTItMC4zOTIsMC4zOTItMS4wMjMsMC0xLjQxNWwtMS44MjctMS44MjdjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkyLTEuNDE0LDANCglMMTIuNTgsOS4zMzhMMy41MzUsMC4yOTNjLTAuMzkyLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE1LDBMMC4yOTMsMi4xMmMtMC4zOTIsMC4zOTItMC4zOTEsMS4wMjMsMCwxLjQxNWw5LjA0NSw5LjA0NGwtOS4wNDUsOS4wNDUNCgljLTAuMzkxLDAuMzkyLTAuMzkxLDEuMDIzLDAsMS40MTRsMS44MjcsMS44MjhjMC4zOTEsMC4zOTEsMS4wMjMsMC4zOTEsMS40MTUsMGw5LjA0NS05LjA0NWw5LjA0NCw5LjA0NA0KCWMwLjM5MSwwLjM5MiwxLjAyMiwwLjM5MiwxLjQxNCwwbDEuODI3LTEuODI3YzAuMzkxLTAuMzkxLDAuMzkyLTEuMDIzLDAtMS40MTRMMTUuODIyLDEyLjU4eiIvPg0KPC9zdmc+DQo=);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.app .nav .menu_button:hover{
+    opacity: 0.3;
+}
+.app .nav .nav-warp{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    right: 100px;
+    top: 0;
+    background-color: #060606;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transition: opacity 487ms ease-out 123ms;
+    -o-transition: opacity 487ms ease-out 123ms;
+    -webkit-transition: opacity 487ms ease-out;
+    -webkit-transition-delay: 123ms;
+    transition: opacity 487ms ease-out 123ms;
+}
+.app.open .nav .nav-warp{
+    opacity: 1;
+}
+
+.three{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9000;
+    width: calc(100% - 100px);
+    height: 50px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+.three .button-base{
+    -webkit-font-smoothing: antialiased;
+    width: 20%;
+    top: 0px;
+    height: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    float: left;
+}
+.three .button-base > div{
+    position: absolute;
+    height: 54px;
+    pointer-events: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+    -ms-transform-origin: 50% 50% -25px;
+}
+.three .button-base > div:nth-child(1) {
+    color: #000000;
+    background-color: #000000;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+}
+.three .button-base > div:nth-child(2) {
+    color: #808080;
+    background-color: #ffffff;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+}
+.three .button-base:hover > div:nth-child(1), .three .button-base.on > div:nth-child(1) {
+    color: #ffffff;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+}
+.three .button-base:hover > div:nth-child(2), .three .button-base.on > div:nth-child(2)  {
+    color: #000000;
+    background-color: #000000;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+}
+.three .button-base > div h1 {
+    font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-smooth: always;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.three .button-base > div:nth-child(1) h1 {
+    color: white;
+}
+.three .button-base > div:nth-child(2) h1 {
+    color: rgb(139,139,139);
+}
+.three .button-base > div .block {
+    background-color: #c7c7c7;
+    display: block;
+    width: 16px;
+    height: 3px;
+    margin-left: -1px;
+    margin-top: 4px;
+}

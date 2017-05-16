@@ -1,0 +1,26 @@
+.slide:after{
+    display: none!important;
+}
+.cases{
+    padding-top: 15px;
+}
+.cases .cases-type{
+    padding: 8px 0;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    background-color: #f6f6f6;
+}
+.cases .cases-type .weui-navigator{
+    background-color: #f6f6f6;
+}
+.cases .cases-type .weui-navigator .weui-navigator-list li{
+    line-height: 22px;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    /*text-align: center;*/
+    /*-webkit-box-flex: 1;*/
+    /*display: -webkit-box;*/
+    /*white-space: nowrap;*/
+    /*-webkit-box-align: center;*/
+    /*-webkit-box-pack: center;*/
+}

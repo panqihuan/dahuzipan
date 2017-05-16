@@ -1,0 +1,102 @@
+
+.home-img-introduce{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.home-img-introduce h1{
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: inherit;
+    text-indent: 18px;
+}
+.bx-wrapper:before{
+    /*content: "Featured Work";*/
+    content: "有特色的工作";
+    font-size: 23px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
+    top: 15px;
+    left: 20px;
+}
+
+.news{
+
+}
+.news .news-title{
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    font-family: GTPressura, arial;
+    height: 50px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    position: relative;
+    border-bottom: 2px solid #D4D4D4;
+}
+.news .news-title a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    display: block;
+}
+.news .news-title a img{
+    height: 50px;
+    float: left;
+}
+.news-box{
+    padding: 0 10px;
+}
+.news-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px 0;
+}
+.news-item:last-child{
+    border-bottom-width: 0;
+}
+.news-item .item-img{
+    position: relative;
+    padding-right: 12px;
+}
+.news-item .item-img img{
+    height: 84px;
+    width: 136px;
+}
+.news-item .item-content{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+.item-content .title{
+    font-size: 16px;
+    font-weight: 400;
+    height: 24px;
+}
+.item-content .content{
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-sizing: border-box;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 20px;
+    text-indent: 12px;
+    font-size: 12px;
+    height: 58px;
+    padding-top: 2px;
+}
